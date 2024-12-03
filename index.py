@@ -20,3 +20,16 @@ if gender == "M" or gender == "m":
     print("fat : %.2fg"%(calorie2*0.3*0.129598))
     print("water should drink : %.2fL"%(weight*0.033))
     print("water should not drink over : %.2fL"%(weight*0.044)) #line 1-22 by worawut
+
+elif gender == "F" or gender == "f":
+    def calorie(weight, height, age):
+        return (10 * weight) + (6.25 * height) - (5 * age) - 161
+    calorie2 = calorie(weight, height, age)
+    print(f"Your daily calorie intake is: {calorie2}")
+    print(f"protein : {weight}g")
+    print(f"carbs : {weight*3}g")
+    print("fat : %.2fg"%(calorie2*0.3*0.129598))
+    print("water should drink : %.2fL"%(weight*0.033))
+    print("water should not drink over : %.2fL"%(weight*0.044))
+else:
+    print("Error please run the program again")  #line 24-35 by porames
